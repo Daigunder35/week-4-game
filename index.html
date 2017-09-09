@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crystal collector</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arvo">
+</head>
+
+<body style="background-image:url(&quot;assets/img/Crystal Pattern 3.jpg&quot;);background-size:auto;background-repeat:no-repeat;">
+    <div class="row">
+        <div class="col-lg-5 col-md-6 col-sm-8" style="padding:0px;padding-left:0px;">
+            <h1 style="background-color:rgb(207,75,19);width:100%;height:75px;font-size:36px;text-align:center;color:white;margin-top:10px;padding-top:15px;font-family:Arvo, serif;">CrystalsCollector! </h1></div>
+    </div>
+    <div class="row" style="padding:0px;padding-left:0px;width:100%;margin:0px;">
+        <div class="col-lg-5 col-lg-offset-0 col-md-6 col-sm-8" style="padding:0px;background-color:#f9e08c;color:green;font-size:18px;">
+            <p style="height:440px;padding-top:10px;padding-left:5px;width:100%;">You will be given a random number at the start for the game.
+                <br>
+                <br>There are four crystals below.By clicking on a crystal you will add a specific amount of points to your total score.
+                <br>
+                <br>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.
+                <br>
+                <br>The value of each crystal is hidden from you until you click on it.
+                <br>
+                <br>Each time when the game starts, the game will change the values of each crystal.
+                <br>
+                <br>Press the green box to reset the random number.</p>
+        </div>
+    </div>
+    <div>
+        <div class="container" style="margin:0px;margin-right:0px;padding:0px;">
+            <div class="row" style="margin-left:0px;">
+                <div class="col-lg-3 col-md-3 col-sm-5" style="padding-left:0px;">
+                    <button id = "buttToWin"><p id="numToWin" style="color:#4c145e;e;e;background-color:#007c59;font-size:35px;height:100px;margin-top:10px;width:250px"></p></button>
+                </div>
+                <div class="col-lg-2 col-lg-offset-0 col-md-2 col-md-offset-1 col-sm-3" style="padding-left:0px;background-color:#920f0f;">
+                    <p style="height:55px;color:white;font-size:17px;margin-top:10px;">Wins: <span id="wins">0<span></p>
+                    <p style="color:white;font-size:17px;">Losses: <span id="losses">0<span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+    <button id="redCryst" class="cryst" value = ""><img src="assets/img/Daily_Spin_Red_Gem.png" style="  margin-right:2%;
+" /></button>
+    <button id="greenCryst" class="cryst" value = ""><img src="assets/img/Daily_Spin_Green_Gem.png" style="  margin-right:2%;
+" /></button>
+    <button id="yellowCryst" class="cryst" value = ""><img src="assets/img/Daily_Spin_Yellow_Gem.png" style="  margin-right:2%;
+" /></button>
+    <button id="orangeCryst" class="cryst" value = ""><img src="assets/img/Daily_Spin_Orange_Gem.png" /></button>
+</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-5 col-md-6">
+                <h3 style="background-color:#ffed38;">Your total score is: </h3></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-5 col-md-6">
+                <p id ="yourScore" style="height:101px;margin-bottom:20px;background-color:#ffed38;font-size:34px;">0 </p>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/Crystal.js"></script>
+</body>
+
+</html>
