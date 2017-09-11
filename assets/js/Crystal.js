@@ -1,23 +1,27 @@
 $(document).ready(function() {
     
-var redVal= Math.floor(Math.random() * 10) +1; 
-var greenVal= Math.floor(Math.random() * 10) +1;
-var yellowVal= Math.floor(Math.random() * 10) +1;
-var orangeVal= Math.floor(Math.random() * 10) +1; 
-var numToWin = Math.floor(Math.random() * 10) +30;
+
+function randNum() {
+    return  Math.floor(Math.random() * 10) +1; 
+}
+
+var redVal= randNum()
+var greenVal= randNum();
+var yellowVal= randNum();
+var orangeVal= randNum();
+var numToWin = randNum() + 29;
 var yourScore = 0;
-var wins = 0
-var losses = 0
+var wins = 0;
+var losses = 0;
 
 $("#numToWin").html(numToWin);
     
 function reset(){
-    redVal= Math.floor(Math.random() * 10) +1; 
-    greenVal= Math.floor(Math.random() * 10) +1;
-    yellowVal= Math.floor(Math.random() * 10) +1;
-    orangeVal= Math.floor(Math.random() * 10) +1; 
+
+   [redVal,greenVal,yellowVal,orangeVal].forEach((crystal) => crystal = Math.floor(Math.random() * 10) +1);
+   
     numToWin = Math.floor(Math.random() * 10) +30;
-    yourScore = 0
+    yourScore = 0;
     $("#numToWin").html(numToWin);
     $("#yourScore").html(yourScore);
 };
